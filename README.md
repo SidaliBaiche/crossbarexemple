@@ -2,7 +2,7 @@
 
 
 //1 etape : 
-        docker build . -t docker build . -t crossbar5 
+        docker build . -t crossbar5 
 //2 etape :
         docker run -v  $PWD:/node -u 0 --rm --name=sidali -it -p 8080:8080 crossbar5
 //3 etape :
