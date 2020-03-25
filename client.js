@@ -23,7 +23,6 @@ var con = mysql.createConnection({
   password: "sidali",
   database: "testdb",
 });
-console.log("OKOKOKOK");
 
 
 connection.onopen = function (session)
@@ -36,7 +35,6 @@ connection.onopen = function (session)
    					  console.log("1 record inserted");
                                           });
                             		  console.log("Got event:", args[0]);
-                                          console.log(typeof args[0]);
       			    	        }
 
                 session.subscribe('com.myapp.hello', onevent1);
